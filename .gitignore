@@ -3,3 +3,10 @@
 ################################################################################
 
 *.user
+/Catask.Logic/Catask.Logic/obj/Debug
+/Catask.Logic/Catask.Logic/bin/Debug
+*.jfm
+/Catask.Database/obj/Debug
+/Catask.Database/bin/Debug
+/.vs/Catask/v15/Server/sqlite3
+/.vs/Catask/v15
