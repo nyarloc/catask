@@ -10,3 +10,6 @@
 /Catask.Database/bin/Debug
 /.vs/Catask/v15/Server/sqlite3
 /.vs/Catask/v15
+/Catask.Logic/obj/Debug
+/Catask.Logic/bin/Debug
+/Catask.Database/Catask.Database.dbmdl
