@@ -13,3 +13,5 @@
 /Catask.Logic/obj/Debug
 /Catask.Logic/bin/Debug
 /Catask.Database/Catask.Database.dbmdl
+/packages/EntityFramework.6.2.0
+/Catask.DAL/Catask.DAL/obj/Debug
