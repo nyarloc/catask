@@ -41,12 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\PriorityModel.cs" />
-    <Compile Include="Models\TaskModel.cs" />
+    <Compile Include="DTO\PriorityDTO.cs" />
+    <Compile Include="DTO\TaskDTO.cs" />
+    <Compile Include="Infrastructure\ValidationException.cs" />
+    <Compile Include="Interfaces\ITaskService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Catask.DAL\Catask.DAL\Catask.DAL.csproj">
+    <ProjectReference Include="..\Catask.DAL\Catask.DAL.csproj">
       <Project>{335bb851-1098-4c2f-801f-3ce616ff6f72}</Project>
       <Name>Catask.DAL</Name>
     </ProjectReference>

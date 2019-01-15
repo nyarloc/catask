@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Catask.Database", "Catask.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catask.Logic", "Catask.Logic\Catask.Logic.csproj", "{B51D8DD0-FDD1-4871-9098-4C0B48133E06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catask.DAL", "Catask.DAL\Catask.DAL\Catask.DAL.csproj", "{335BB851-1098-4C2F-801F-3CE616FF6F72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catask.DAL", "Catask.DAL\Catask.DAL.csproj", "{335BB851-1098-4C2F-801F-3CE616FF6F72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
