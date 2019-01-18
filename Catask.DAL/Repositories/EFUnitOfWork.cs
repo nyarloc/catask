@@ -9,7 +9,6 @@ namespace Catask.DAL.Repositories
     {
         private CataskContext context;
         private TaskRepository taskRepository;
-        private PriorityRepository priorityRepository;
         private bool disposed = false;
 
         public EFUnitOfWork(string connectionString)
@@ -24,16 +23,6 @@ namespace Catask.DAL.Repositories
                 if (taskRepository == null)
                     taskRepository = new TaskRepository(context);
                 return taskRepository;
-            }
-        }
-
-        public IRepository<Priority> Priorities
-        {
-            get
-            {
-                if (priorityRepository == null)
-                    priorityRepository = new PriorityRepository(context);
-                return priorityRepository;
             }
         }
 

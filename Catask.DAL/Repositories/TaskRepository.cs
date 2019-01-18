@@ -29,12 +29,12 @@ namespace Catask.DAL.Repositories
 
         public IEnumerable<Task> Find(Func<Task, bool> predicate)
         {
-            return context.Tasks.Include(o => o.Priority).Where(predicate).ToList();
+            return context.Tasks.Where(predicate).ToList();
         }
 
         public IEnumerable<Task> GetAll()
         {
-            return context.Tasks.Include(o => o.Priority);
+            return context.Tasks;
         }
 
         public void Update(Task item)

@@ -7,5 +7,5 @@
     [parent] UNIQUEIDENTIFIER NULL, 
     [priority] TINYINT NOT NULL , 
     [points] SMALLINT NOT NULL, 
-    CONSTRAINT [FK_tasks_to_priorities] FOREIGN KEY ([priority]) REFERENCES [priorities]([id])
+    CONSTRAINT [FK_tasks_to_tasks] FOREIGN KEY ([parent]) REFERENCES [tasks]([uid])
 )

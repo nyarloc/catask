@@ -6,9 +6,9 @@ namespace Catask.Logic.Interfaces
 {
     public interface ITaskService
     {
-        void CreateTask(TaskDTO task);
-        TaskDTO GetTask(Guid? uid);
-        IEnumerable<TaskDTO> GetTasks();
+        void Create(TaskDTO task);
+        TaskDTO Get(Guid? uid);
+        IEnumerable<TaskDTO> GetAll();
         void Dispose();
     }
 }

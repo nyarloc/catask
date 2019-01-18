@@ -58,7 +58,6 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
-    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\tasks.sql" />
@@ -66,9 +65,5 @@
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Catask.Database.refactorlog" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Scripts\setting_priorities.sql" />
-    <None Include="Scripts\setting_first_task.sql" />
   </ItemGroup>
 </Project>
