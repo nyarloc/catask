@@ -11,7 +11,8 @@ namespace Catask.DAL.EF
             Task firstTask = new Task
             {
                 UID = Guid.NewGuid(),
-                Description = "Это первая задача",
+                Name = "Это первая задача",
+                Description = "Это описание первой задачи",
                 OpenDate = DateTime.Now,
                 Points = 1,
                 Priority = 0
@@ -20,7 +21,7 @@ namespace Catask.DAL.EF
             context.Tasks.Add(new Task
             {
                 UID = Guid.NewGuid(),
-                Description = "Это первая подзадача",
+                Name = "Это подзадача",
                 OpenDate = DateTime.Now,
                 Points = 1,
                 Priority = 0,

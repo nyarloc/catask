@@ -12,5 +12,6 @@ namespace Catask.DAL.Entities
         public Guid? Parent { get; set; }
         public byte Priority { get; set; }
         public short Points { get; set; }
+        public string Name { get; set; }
     }
 }

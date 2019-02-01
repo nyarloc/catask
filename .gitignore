@@ -20,3 +20,5 @@
 /Catask.Logic/obj/Release
 /Catask.DAL/obj/Release
 /.vs
+/Catask.UnitTest/bin/Debug
+/Catask.UnitTest/obj/Debug

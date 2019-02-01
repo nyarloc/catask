@@ -14,10 +14,13 @@ namespace Catask.Logic.DTO
         public List<TaskDTO> Children { get; set; }
         public byte Priority { get; set; }
         public short Points { get; set; }
+        public string Name { get; set; }
 
         public TaskDTO(Task task, Task[] children = null)
         {
+            if (task == null) return;
             UID = task.UID;
+            Name = task.Name;
             Description = task.Description;
             OpenDate = task.OpenDate;
             CloseDate = task.CloseDate;

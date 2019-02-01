@@ -4,7 +4,6 @@ using Catask.DAL.Entities;
 using Catask.DAL.Interfaces;
 using Catask.Logic.DTO;
 using Catask.Logic.Interfaces;
-using AutoMapper;
 using System.Linq;
 
 namespace Catask.Logic.Services
@@ -23,6 +22,7 @@ namespace Catask.Logic.Services
             Task task = new Task
             {
                 UID = new Guid(),
+                Name = taskDTO.Name,
                 Description = taskDTO.Description,
                 OpenDate = DateTime.Now,
                 Points = taskDTO.Points,
@@ -33,10 +33,10 @@ namespace Catask.Logic.Services
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Database.Dispose();
         }
 
-        public TaskDTO Get(Guid? uid)
+        public TaskDTO Get(Guid uid)
         {
             Task result = Database.Tasks.Find(task => task.UID == uid).SingleOrDefault();
             Task[] resultChildren = Database.Tasks.Find(task => task.Parent == result.UID).ToArray();
@@ -44,6 +44,12 @@ namespace Catask.Logic.Services
         }
 
         public IEnumerable<TaskDTO> GetAll()
+        {
+            Task[] tasks = Database.Tasks.GetAll().ToArray();
+            return tasks.Select(task => new TaskDTO(task, tasks.Where(child => child.Parent == task.UID).ToArray()));
+        }
+
+        public void Close(TaskDTO task)
         {
             throw new NotImplementedException();
         }
